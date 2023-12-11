@@ -1,18 +1,9 @@
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import { fetchBreeds, fetchCatByBreed } from './cat-api.js';
 
-
-// import SlimSelect from 'slim-select';
-
-// new SlimSelect({
-//     select: 'breedSelect'
-// })
-
 const breedSelect = document.querySelector('.breed-select');
-// const breedSelect = document.querySelector('#selectElement');
 const catInfo = document.querySelector('.cat-info');
 const loader = document.querySelector('.loader');
-const errorMessage = document.querySelector('.error');
 
 breedSelect.addEventListener('change', onSelect);
 
